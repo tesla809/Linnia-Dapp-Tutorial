@@ -1,6 +1,6 @@
 # Linnia Decentralized Application Tutorial
 ---
-This is a tutorial which describes how to setup and use the Linnia Protocol via the LinniaJS library. We will create a sample decentralized application to demonstrate the protocol's utility in an applied manner.
+This is a tutorial which describes how to setup and use the Linnia Protocol via the LinniaJS library. We will create a sample decentralized application to demonstrate the Linnia Protocol's utility in an applied manner.
 
 Why do we need this setup?  
 [See our Beginners to Modern Web Development FAQs](#beginners-to-modern-web-development-faq)
@@ -32,12 +32,10 @@ Download the files directly, you can do so [here](https://github.com/).
 
 Or run the following command in your terminal:
 ```console
-  git clone https://github.com/someTutorialAddress
+  git clone https://github.com/tesla809/Linnia-Dapp-Tutorial.git
 ```
 
 **Note:** If you are familiar with a standard setup, you can skip to the next section, ["Uploading Records with Linnia"](#upload-records-with-linnia)
-
-
 
 
 ---
