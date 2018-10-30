@@ -6,12 +6,30 @@ Why do we need this setup?
 [See our Beginners to Modern Web Development FAQs](#beginners-to-modern-web-development-faq)
 
 ## Sections
+- [Background](#background)
+- [About the Decentralized App](#about-the-decentralized-app)
 - [Setup](#setup)
 - [Create File Structure](#create-file-structure)
 - [Upload Records With Linnia](#upload-records-with-linnia)
 - [View and Remove Permissions](#view-and-remove-permissions)
 - [Accepting or Declining](#accepting-or-declining)
----
+
+
+## Background
+The Linnia Protocol allows users to own and control their data without the need for centralized third parties. Learn what Linnia is all about on our [Linnia Resources](README.md) page.
+
+LinniaJS is the JavaScript library that allows developers to use the Linnia Protocol. Check out the LinniaJS API on [Github](https://github.com/ConsenSys/linnia-js) and [npm](https://www.npmjs.com/package/@linniaprotocol/linnia-js).
+
+## About the Decentralized App
+This DApp will be a based on the winning DApp during the first Linnia Hackathon **[insert link]**, by **[insert names]** back in August 2018.
+
+The DApp was called "Real Estate Dapp". It was focused on the solving the problem of sharing data with multiple parties during a real estate transaction such as buying or renting a property.
+
+Since it was a hackathon project, we have cleaned it up the code and removed React to make it more accessible to a wider range of developers. However, we will use ES6 and will need to set up a Webpack to be able to [transpile](https://medium.com/front-end-hacking/a-world-of-javascript-transpilers-b3b7b880a1be) and [bundle](https://medium.com/@gimenete/how-javascript-bundlers-work-1fc0d0caf2da) our code. Having this setup early on solves more headaches than it causes. [See why here](#addFAQExplaintion).
+
+To be brief, many web browsers do not support the state of the art JavaScript language upgrades that make a developer's life easy. Rather than waiting around, we will just use a transpiler and bundler to allow us to use tomorrow's feature today.
+
+If you have any questions regarding this tutorial, please refer to the tutorial FAQ **[add link to FAQs]**.
 
 ## Setup:
 **Goal**:
@@ -37,20 +55,17 @@ Or run the following command in your terminal:
 
 **Note:** If you are familiar with a standard setup, you can skip to the next section, ["Uploading Records with Linnia"](#upload-records-with-linnia)
 
-
----
 ### Create File Structure
 Ipsum Lorem....
 
----
+
 ### Upload Records With Linnia
 Ipsum Lorem....
 
----
 ### Accepting or Declining
 Ipsum Lorem....
 
-----
+
 ## Beginners to Modern Web Development FAQ:
 **Q: You said this was accessible?**  
 A: While we tried to make this accessible, this is the current state of web development today. Trying to make it simpler without the build tools set up would have ironically made learning about Linnia harder. We get thru the setup quickly.
