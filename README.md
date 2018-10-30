@@ -6,7 +6,7 @@ Why do we need this setup?
 [See our Beginners to Modern Web Development FAQs](#beginners-to-modern-web-development-faq)
 
 ## Sections
-- [Background](#background)
+- [Linnia Protocol Summary](#linnia-protocol-summary)
 - [About the Decentralized App](#about-the-decentralized-app)
 - [Setup](#setup)
 - [Create File Structure](#create-file-structure)
@@ -15,21 +15,21 @@ Why do we need this setup?
 - [Accepting or Declining](#accepting-or-declining)
 
 
-## Background
-The Linnia Protocol allows users to own and control their data without the need for centralized third parties. Learn what Linnia is all about on our [Linnia Resources](README.md) page.
+## Linnia Protocol Summary
+The Linnia Protocol allows users to own and control their data without the need for centralized third parties. Learn what Linnia is all about on our [Linnia Resources](https://github.com/ConsenSys/linnia-resources) page.
 
 LinniaJS is the JavaScript library that allows developers to use the Linnia Protocol. Check out the LinniaJS API on [Github](https://github.com/ConsenSys/linnia-js) and [npm](https://www.npmjs.com/package/@linniaprotocol/linnia-js).
 
 ## About the Decentralized App
-This DApp will be a based on the winning DApp during the first Linnia Hackathon **[insert link]**, by **[insert names]** back in August 2018.
+This tutorial DApp will be a based on the winning DApp during the first Linnia Hackathon by Isabel Lee, Mark G. Romano, Rene Medalla, and Gabriel Tan back in August 2018. Their original hackathon project can be found [here](https://github.com/ijl0322/Linnia-Hackathon-Final).
 
 The DApp was called "Real Estate Dapp". It was focused on the solving the problem of sharing data with multiple parties during a real estate transaction such as buying or renting a property.
 
-Since it was a hackathon project, we have cleaned it up the code and removed React to make it more accessible to a wider range of developers. However, we will use ES6 and will need to set up a Webpack to be able to [transpile](https://medium.com/front-end-hacking/a-world-of-javascript-transpilers-b3b7b880a1be) and [bundle](https://medium.com/@gimenete/how-javascript-bundlers-work-1fc0d0caf2da) our code. Having this setup early on solves more headaches than it causes. [See why here](#addFAQExplaintion).
+Since it was a hackathon project, we have cleaned up the code and removed React to make it more accessible to a wider range of developers. However, we will use ES6 and this will need to set up a Webpack to be able to [transpile](https://medium.com/front-end-hacking/a-world-of-javascript-transpilers-b3b7b880a1be) and [bundle](https://medium.com/@gimenete/how-javascript-bundlers-work-1fc0d0caf2da) our code. Having this setup early on solves more headaches than it causes. [See why here](#beginners-to-modern-web-development-faq).
 
 To be brief, many web browsers do not support the state of the art JavaScript language upgrades that make a developer's life easy. Rather than waiting around, we will just use a transpiler and bundler to allow us to use tomorrow's feature today.
 
-If you have any questions regarding this tutorial, please refer to the tutorial FAQ **[add link to FAQs]**.
+If you have any questions regarding this tutorial, please refer to the [tutorial FAQ](#beginners-to-modern-web-development-faq).
 
 ## Setup:
 **Goal**:
@@ -133,4 +133,14 @@ Our focus will be primarily on Linnia.
 However, will include links for those who wish to learn more.
 
 **Q: Why do we need Webpack?**  
-A: We will be using ES6 modules and need to ensure that they work. Hence, we will need a bundler like web pack to  bundle the code up with a bundler
+A: We will be using ES6 modules and need to ensure that they work. Hence, we will need a bundler like web pack to  bundle the code up with a bundler.
+
+**Q: What is a transpiler?**  
+A: Transpilers translate code from one form to another of a similar language. So from TypeScript to JavaScript. Or from ES6 to ES5 the version of JavaScript currently supported all browsers.
+
+See this [link](https://scotch.io/tutorials/javascript-transpilers-what-they-are-why-we-need-them) for more information.
+
+**Q: What is a bundler?**  
+A: A bundler packages different JavaScript files or modules together into one file. Writing code as modules allows for greater organization and less confusion. It can also help us write and use general libraries in our code. Bundling frees us from having multiples files to download by allowing the user can issue one request and save time.
+
+See this [link](https://medium.com/@gimenete/how-javascript-bundlers-work-1fc0d0caf2da) for more information on bundlers and Webpack.
