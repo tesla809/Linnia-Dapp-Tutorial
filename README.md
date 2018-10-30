@@ -36,9 +36,24 @@ If you have any questions regarding this tutorial, please refer to the tutorial 
 In this section, we will describe how setup our project. We will focus on setting up the tools before adding any code.
 
 ### Step 1. Install Node
-First, we have to make sure that you have NodeJS installed on your computer. NodeJS is a  JavaScript runtime environment that allows you to use JavaScript on the backend like any other programming language. It frees JavaScript from being just a client side language.
+First, we have to make sure that you have NodeJS installed on your computer. NodeJS is a  JavaScript runtime environment that allows you to use JavaScript on the backend like any other programming language. It frees JavaScript from being just a client side language and allows us to use it on the back end.
 
 To install NodeJs, go to [Nodejs.org](https://nodejs.org/en/) and follow the installation instructions for your operating system.
+
+Once you have installed nodeJS, open your terminal and check if you have node installed.
+
+Run the command:
+
+```bash
+node -v
+```
+
+You should get something like:
+
+```bash
+v10.7.0
+```
+Don't worry if it is not the same version. LinniaJS will work with any version of Node above version 10 will work.
 
 ### Step 2. Create Folder Structure
 Next you will create the folder structure and files for this project.
@@ -49,15 +64,29 @@ If you wish to get the files directly you can do either of two things
 Download the files directly, you can do so [here](https://github.com/).
 
 Or run the following command in your terminal:
-```console
+```bash
   git clone https://github.com/tesla809/Linnia-Dapp-Tutorial.git
 ```
 
-**Note:** If you are familiar with a standard setup, you can skip to the next section, ["Uploading Records with Linnia"](#upload-records-with-linnia)
+**Note:** If you are familiar with a standard setup, you can skip to the future section, ["Uploading Records with Linnia"](#upload-records-with-linnia).
 
 ### Create File Structure
-Ipsum Lorem....
+Find a location where you would like to place your project folder and create a new folder called 'Linnia-Real-Estate-Dapp'.
 
+For those that use bash on your terminal, ```cd``` (change directory) to the directory of your choice and ```mkdir``` (make a directory aka folder).
+
+```bash
+cd DIRECTORY_OF_CHOICE
+mkdir Linnia-Real-Estate-Dapp
+```
+
+Inside ```Linnia-Real-Estate-Dapp``` create two other directories: ```/css```  and ```/js``` :
+
+```html
+Linnia-Real-Estate-Dapp
++ |- /css
++ |- /js
+```
 
 ### Upload Records With Linnia
 Ipsum Lorem....
