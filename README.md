@@ -58,7 +58,7 @@ Don't worry if it is not the same version. LinniaJS will work with any version o
 ### Step 2. Create Folder Structure
 Next you will create the folder structure and files for this project.
 
-##### Quick setup:
+### Quick setup:
 If you wish to get the files directly you can do either of two things
 
 Download the files directly, you can do so [here](https://github.com/).
@@ -88,21 +88,23 @@ Linnia-Real-Estate-Dapp
 + |- /js
 ```
 
-### Upload Records With Linnia
+## Create The Files
+Next we will create the files. We will use HTML5, CSS3 and ES6 (ECMAScript 2015) aka the most recent version of JavaScript.
+
+## Upload Records With Linnia
 Ipsum Lorem....
 
-### Accepting or Declining
+## Accepting or Declining
 Ipsum Lorem....
-
 
 ## Beginners to Modern Web Development FAQ:
-**Q: You said this was accessible?**  
+**Q: You said this was accessible?**
 A: While we tried to make this accessible, this is the current state of web development today. Trying to make it simpler without the build tools set up would have ironically made learning about Linnia harder. We get thru the setup quickly.
 
-**Q: Before I get started, why should I invest this time into learning this?**  
+**Q: Before I get started, why should I invest this time into learning this?**
 A: The setup will be brief. Although there may be some new tools you have never seen, they will quickly seem familiar.
 
-**Q: I just want to use LinniaJS. Why do I have all these dependencies?**  
+**Q: I just want to use LinniaJS. Why do I have all these dependencies?**
 A: These dependencies are the de-facto standard in modern web development. The setup time is compensated by the ease of which they bring later during the workflow.  
 
 ES6 introduced a bunch of useful things that makes developing web applications easier. However, due to the lack of coordination between browsers, developers had two choices.
@@ -111,7 +113,7 @@ Developers could wait for all browsers to adopt all the features, while make lif
 
 No worries though. We will gloss over going too in-depth with the tools, only set things up and just focus on using Linnia specifically.
 
-**Q: What is NodeJS?**  
+**Q: What is NodeJS?**
 NodeJS is a JavaScript runtime environment. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
 
 Basically, NodeJS programs do things faster than others. Why? Because while the program is waiting for the information it has requested, it can do other things. This means it gets more work done, as compared to other environments that wait till the information is received, aka blocking;.
