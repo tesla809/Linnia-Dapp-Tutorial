@@ -4,14 +4,17 @@ This is a tutorial which describes how to setup and use the Linnia Protocol via 
 Why do we need this setup?  
 [See our Beginners to Modern Web Development FAQs](#beginners-to-modern-web-development-faq)
 
-## Sections
+### Table of Contents
 - [Linnia Protocol Summary](#linnia-protocol-summary)
 - [About the Decentralized App](#about-the-decentralized-app)
 - [Setup](#setup)
-- [Create File Structure](#create-file-structure)
-- [Upload Records With Linnia](#upload-records-with-linnia)
-- [View and Remove Permissions](#view-and-remove-permissions)
-- [Accepting or Declining](#accepting-or-declining)
+  - [Installing NodeJS](#step-1-install-node)
+  - [Create File Structure](#step-2-create-folder-structure)
+  - [Create Files](#step-3-create-files)
+- Using Linnia
+  - [Upload Records With Linnia](#upload-records-with-linnia)
+  - [View and Remove Permissions](#view-and-remove-permissions)
+  - [Accepting or Declining](#accepting-or-declining)
 
 
 ## Linnia Protocol Summary
@@ -33,6 +36,8 @@ If you have any questions regarding this tutorial, please refer to the [tutorial
 ## Setup:
 **Goal**:
 In this section, we will describe how setup our project. We will focus on setting up the tools before adding any code.
+
+**Note:** If you are familiar with a standard setup, you can skip to the future section, ["Uploading Records with Linnia"](#upload-records-with-linnia).
 
 ### Step 1. Install Node
 First, we have to make sure that you have NodeJS installed on your computer. NodeJS is a  JavaScript runtime environment that allows you to use JavaScript on the backend like any other programming language. It frees JavaScript from being just a client side language and allows us to use it on the back end.
@@ -80,9 +85,7 @@ Or run the following command in your terminal:
   git clone https://github.com/tesla809/Linnia-Dapp-Tutorial.git
 ```
 
-**Note:** If you are familiar with a standard setup, you can skip to the future section, ["Uploading Records with Linnia"](#upload-records-with-linnia).
-
-### Create File Structure
+**Regular Setup:**
 Find a location where you would like to place your project folder and create a new folder called 'Linnia-Real-Estate-Dapp'.
 
 For those that use bash on your terminal, ```cd``` (change directory) to the directory of your choice and ```mkdir``` (make a directory aka folder).
@@ -94,13 +97,14 @@ mkdir Linnia-Real-Estate-Dapp
 
 Inside ```Linnia-Real-Estate-Dapp``` create two other directories: ```/css```  and ```/js``` :
 
-```bash
+```
 Linnia-Real-Estate-Dapp
 + |- /css
 + |- /js
 ```
 
-## Create The Files
+### Step 3. Create Files
+**Basic files**
 Next, we will create the files needed for our project. We will use HTML5, CSS3 and ES6 (ECMAScript 2015) aka the most recent version of JavaScript.
 
 The ```main.js``` will be in the ```/js``` folder. ```Index.html``` will be in the root.
@@ -108,11 +112,34 @@ The ```main.js``` will be in the ```/js``` folder. ```Index.html``` will be in t
 ```
 Linnia-Real-Estate-Dapp
 |- /css
++  |- styles.css
 |- /js
-+ |- main.js
++  |- main.js
 + index.html
 ```
 
+**npm setup**
+To set up npm, we run the following command inside out root folder ```Linnia-Real-Estate-Dapp```:
+
+```bash
+npm init
+```
+
+You should see a new file called ```package.json```
+
+```
+Linnia-Real-Estate-Dapp
+|- /css
+  |- styles.css
+|- /js
+  |- main.js
+index.html
++ package.json
+```
+
+
+## Using Linnia
+Ipsum Lorem....
 
 ## Upload Records With Linnia
 Ipsum Lorem....
