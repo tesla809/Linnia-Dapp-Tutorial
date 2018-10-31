@@ -11,7 +11,7 @@ Why do we need this setup?
   - [Installing NodeJS](#step-1-install-node)
   - [Create File Structure](#step-2-create-folder-structure)
   - [Create Files](#step-3-create-files)
-- Using Linnia
+- [Using Linnia](#using-linnia)
   - [Upload Records With Linnia](#upload-records-with-linnia)
   - [View and Remove Permissions](#view-and-remove-permissions)
   - [Accepting or Declining](#accepting-or-declining)
@@ -137,14 +137,13 @@ index.html
 + package.json
 ```
 
-
 ## Using Linnia
 Ipsum Lorem....
 
-## Upload Records With Linnia
+### Upload Records With Linnia
 Ipsum Lorem....
 
-## Accepting or Declining
+### Accepting or Declining
 Ipsum Lorem....
 
 ## Beginners to Modern Web Development FAQ:
