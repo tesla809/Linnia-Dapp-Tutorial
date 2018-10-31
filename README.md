@@ -11,6 +11,7 @@ Why do we need this setup?
   - [Installing NodeJS](#step-1-install-node)
   - [Create File Structure](#step-2-create-folder-structure)
   - [Create Files](#step-3-create-files)
+  - [Installing Developer Dependencies](#step-4-installing-developer-dependencies)
 - [Using Linnia](#using-linnia)
   - [Upload Records With Linnia](#upload-records-with-linnia)
   - [View and Remove Permissions](#view-and-remove-permissions)
@@ -85,16 +86,16 @@ git clone https://github.com/tesla809/Linnia-Dapp-Tutorial.git
 ```
 
 **Regular Setup:**
-Find a location where you would like to place your project folder and create a new folder called 'Linnia-Real-Estate-Dapp'.
+Find a location where you would like to place your project folder and create a new folder aka directory called 'Linnia-Real-Estate-Dapp'.
 
-For those that use bash on your terminal, ```cd``` (change directory) to the directory of your choice and ```mkdir``` (make a directory aka folder).
+For those that use bash on your terminal, ```cd``` (change directory) to the directory of your choice and ```mkdir``` (make directory).
 
 ```bash
 cd DIRECTORY_OF_CHOICE
 mkdir Linnia-Real-Estate-Dapp
 ```
 
-Inside ```Linnia-Real-Estate-Dapp``` create two other directories: ```/css```  and ```/js``` :
+Inside ```Linnia-Real-Estate-Dapp``` create two other directories: ```/css```  and ```/js```:
 
 ```
 Linnia-Real-Estate-Dapp
@@ -124,9 +125,9 @@ To set up npm, we run the following command inside out root folder ```Linnia-Rea
 npm init
 ```
 
-The terminal will prompt you to fill out some information. Fill out the information as you see fit.
+The terminal will prompt you to fill out some information. Fill out the information as you see fit. Questions about working with npm's package.json can be found [here](https://docs.npmjs.com/getting-started/using-a-package.json)
 
-Note: If no URL repository appears, you can modify the JSON file later on.
+**Note:** If no URL repository appears, you can modify the JSON file later on.
 
 You should see a new file called ```package.json```
 
@@ -139,6 +140,33 @@ Linnia-Real-Estate-Dapp
 index.html
 + package.json
 ```
+
+### Step 4. Installing Developer Dependencies
+We will focus on setting up the tools which will allow us to write in modern ES6. Using ES6 will let us take advantage of some new nifty features that will make our lives easier.
+
+We will need:
+1. [babel-core](https://www.npmjs.com/package/babel-core) (transpiler)
+2. [babel-cli](https://www.npmjs.com/package/babel-cli) (babel's command line interface)
+3. [@babel/preset-env](https://github.com/babel/babel/tree/master/packages/babel-preset-env) (presets to use ES6 aka ECMAScript 2015)
+4. [babel-loader](https://www.npmjs.com/package/babel-loader) (loads babel into Webpack)
+5. [http-server](https://www.npmjs.com/package/http-server) (local web sever)
+6. [webpack](https://www.npmjs.com/package/webpack)(toolchain that automates a lot of processes + bundler)
+7. [webpack-cli](https://www.npmjs.com/package/webpack-cli) (Webpack's command line interface)
+
+Don't fret, we can install these with one single line of code
+```bash
+npm install --save-dev babel-core babel-cli @babel/preset-env babel-loader http-server webpack webpack-cli
+```
+Or, if you'd like to install them one by one you repeat the following:
+```bash
+npm install babel-core --save-dev
+```
+And replace the package with the name of each package on the list.
+
+**Note**: The --save-dev flag places the package in our dev-dependencies section of our package.json file.
+
+A quick summary of the difference between --save-dev and --save can be found [here](#https://stackoverflow.com/questions/22891211/what-is-the-difference-between-save-and-save-dev).
+
 
 ## Using Linnia
 Ipsum Lorem....
