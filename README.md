@@ -103,7 +103,9 @@ Linnia-Real-Estate-Dapp
 ## Create The Files
 Next, we will create the files needed for our project. We will use HTML5, CSS3 and ES6 (ECMAScript 2015) aka the most recent version of JavaScript.
 
-```bash
+The ```main.js``` will be in the ```/js``` folder. ```Index.html``` will be in the root.
+
+```
 Linnia-Real-Estate-Dapp
 |- /css
 |- /js
