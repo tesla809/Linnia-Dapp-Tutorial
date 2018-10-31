@@ -16,7 +16,6 @@ Why do we need this setup?
   - [View and Remove Permissions](#view-and-remove-permissions)
   - [Accepting or Declining](#accepting-or-declining)
 
-
 ## Linnia Protocol Summary
 The Linnia Protocol allows users to own and control their data without the need for centralized third parties. Learn what Linnia is all about on our [Linnia Resources](https://github.com/ConsenSys/linnia-resources) page.
 
@@ -82,7 +81,7 @@ Download the files directly, you can do so [here](https://github.com/).
 
 Or run the following command in your terminal:
 ```bash
-  git clone https://github.com/tesla809/Linnia-Dapp-Tutorial.git
+git clone https://github.com/tesla809/Linnia-Dapp-Tutorial.git
 ```
 
 **Regular Setup:**
@@ -107,14 +106,14 @@ Linnia-Real-Estate-Dapp
 **Basic files**
 Next, we will create the files needed for our project. We will use HTML5, CSS3 and ES6 (ECMAScript 2015) aka the most recent version of JavaScript.
 
-The ```main.js``` will be in the ```/js``` folder. ```Index.html``` will be in the root.
+The ```index.js``` will be in the ```/js``` folder. ```Index.html``` will be in the root.
 
 ```
 Linnia-Real-Estate-Dapp
 |- /css
 +  |- styles.css
 |- /js
-+  |- main.js
++  |- index.js
 + index.html
 ```
 
@@ -124,6 +123,10 @@ To set up npm, we run the following command inside out root folder ```Linnia-Rea
 ```bash
 npm init
 ```
+
+The terminal will prompt you to fill out some information. Fill out the information as you see fit.
+
+Note: If no URL repository appears, you can modify the JSON file later on.
 
 You should see a new file called ```package.json```
 
