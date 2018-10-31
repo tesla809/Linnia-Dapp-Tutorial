@@ -1,5 +1,4 @@
 # Linnia Decentralized Application Tutorial
----
 This is a tutorial which describes how to setup and use the Linnia Protocol via the LinniaJS library. We will create a sample decentralized application to demonstrate the Linnia Protocol's utility in an applied manner.
 
 Why do we need this setup?  
@@ -40,7 +39,7 @@ First, we have to make sure that you have NodeJS installed on your computer. Nod
 
 To install NodeJs, go to [Nodejs.org](https://nodejs.org/en/) and follow the installation instructions for your operating system.
 
-Once you have installed nodeJS, open your terminal and check if you have node installed.
+To check if installed nodeJS and npm are installed properly, open your terminal and run the following commands.
 
 Run the command:
 
@@ -53,13 +52,26 @@ You should get something like:
 ```bash
 v10.7.0
 ```
-Don't worry if it is not the same version. LinniaJS will work with any version of Node above version 10 will work.
+
+Run the command:
+
+```bash
+npm -v
+```
+
+Your terminal should return something like:
+
+```bash
+6.4.1
+```
+
+Don't worry if it is not the same version. LinniaJS will work with any version of Node in Long Term release of 10 and up. If NodeJS is properly installed you should not have issues with setting up npm.
 
 ### Step 2. Create Folder Structure
 Next you will create the folder structure and files for this project.
 
-### Quick setup:
-If you wish to get the files directly you can do either of two things
+**Quick setup:**
+If you wish to get the files directly you can do either of two things.
 
 Download the files directly, you can do so [here](https://github.com/).
 
@@ -82,14 +94,23 @@ mkdir Linnia-Real-Estate-Dapp
 
 Inside ```Linnia-Real-Estate-Dapp``` create two other directories: ```/css```  and ```/js``` :
 
-```html
+```bash
 Linnia-Real-Estate-Dapp
 + |- /css
 + |- /js
 ```
 
 ## Create The Files
-Next we will create the files. We will use HTML5, CSS3 and ES6 (ECMAScript 2015) aka the most recent version of JavaScript.
+Next, we will create the files needed for our project. We will use HTML5, CSS3 and ES6 (ECMAScript 2015) aka the most recent version of JavaScript.
+
+```bash
+Linnia-Real-Estate-Dapp
+|- /css
+|- /js
++ |- main.js
++ index.html
+```
+
 
 ## Upload Records With Linnia
 Ipsum Lorem....
