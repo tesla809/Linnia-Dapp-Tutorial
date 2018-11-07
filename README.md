@@ -104,7 +104,7 @@ Linnia-Real-Estate-Dapp
 ```
 
 ### Step 3. Create Files
-**Basic files**
+**Basic files**  
 Next, we will create the files needed for our project. We will use HTML5, CSS3 and ES6 (ECMAScript 2015) aka the most recent version of JavaScript.
 
 The ```index.js``` will be in the ```/js``` folder. ```Index.html``` will be in the root.
@@ -118,7 +118,7 @@ Linnia-Real-Estate-Dapp
 + index.html
 ```
 
-**npm setup**
+**npm setup**  
 To set up npm, we run the following command inside out root folder ```Linnia-Real-Estate-Dapp```:
 
 ```bash
@@ -145,15 +145,22 @@ index.html
 We will focus on setting up the tools which will allow us to write in modern ES6. Using ES6 will let us take advantage of some new nifty features that will make our lives easier.
 
 We will need:
-1. [babel-core](https://www.npmjs.com/package/babel-core) (transpiler)
-2. [babel-cli](https://www.npmjs.com/package/babel-cli) (babel's command line interface)
-3. [@babel/preset-env](https://github.com/babel/babel/tree/master/packages/babel-preset-env) (presets to use ES6 aka ECMAScript 2015)
-4. [babel-loader](https://www.npmjs.com/package/babel-loader) (loads babel into Webpack)
-5. [http-server](https://www.npmjs.com/package/http-server) (local web sever)
-6. [webpack](https://www.npmjs.com/package/webpack)(toolchain that automates a lot of processes + bundler)
-7. [webpack-cli](https://www.npmjs.com/package/webpack-cli) (Webpack's command line interface)
+1. [babel-core](https://www.npmjs.com/package/babel-core)
+Babel is a JavaScript transpiler that transforms ECMAScript 2015+ code into backwards compatible version of JavaScript for current and older browser.
+2. [babel-cli](https://www.npmjs.com/package/babel-cli)
+babel-cli is the command line interface for Babel. It allows for scripts within npm and Webpack to call upon and use it.
+3. [babel-preset-env](https://github.com/babel/babel/tree/master/packages/babel-preset-env) (presets to use ES6 aka ECMAScript 2015)
+4. [babel-loader](https://www.npmjs.com/package/babel-loader)
+In Babel 6, every transformer is a plugin that can be installed separately. A preset is a group of related plugins. Using a preset, you don’t have to install and update dozens of plugins individually.  
+5. [http-server](https://www.npmjs.com/package/http-server)
+We need a local web server because some parts of this tutorial will require the app to be loaded using the http protocol. Opening the file up in the browser normally won't work.
+6. [webpack](https://www.npmjs.com/package/webpack)
+Webpack is a module bundler whose main purpose is to bundle JavaScript files for usage in a browser. Yet it is also capable of transforming, transpiling, bundling, or packaging just about any resource or asset, like css, html files, images, etc.
+7. [webpack-cli](https://www.npmjs.com/package/webpack-cli)  
+Webpack's command line interface.
 
-Don't fret, we can install these with one single line of code
+Don't fret, we can install these with one single line of code by copying:
+
 ```bash
 npm install --save-dev babel-core babel-cli @babel/preset-env babel-loader http-server webpack webpack-cli
 ```
@@ -166,6 +173,12 @@ And replace the package with the name of each package on the list.
 **Note**: The --save-dev flag places the package in our dev-dependencies section of our package.json file.
 
 A quick summary of the difference between --save-dev and --save can be found [here](#https://stackoverflow.com/questions/22891211/what-is-the-difference-between-save-and-save-dev).
+
+### Step 5. Configuring Developer Dependencies
+Ipsum Lorem....
+
+Setting up ```babel-preset-env```
+https://babeljs.io/docs/en/env
 
 
 ## Using Linnia
