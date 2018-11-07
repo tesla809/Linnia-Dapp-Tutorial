@@ -149,7 +149,8 @@ We will need:
 Babel is a JavaScript transpiler that transforms ECMAScript 2015+ code into backwards compatible version of JavaScript for current and older browser.
 2. [babel-cli](https://www.npmjs.com/package/babel-cli)
 babel-cli is the command line interface for Babel. It allows for scripts within npm and Webpack to call upon and use it.
-3. [babel-preset-env](https://github.com/babel/babel/tree/master/packages/babel-preset-env) (presets to use ES6 aka ECMAScript 2015)
+3. [babel-preset-env](https://github.com/babel/babel/tree/master/packages/babel-preset-env)
+Let's Babel use the ES2015 syntax to convert to backwards compatible version of JavaSCript.
 4. [babel-loader](https://www.npmjs.com/package/babel-loader)
 In Babel 6, every transformer is a plugin that can be installed separately. A preset is a group of related plugins. Using a preset, you don’t have to install and update dozens of plugins individually.  
 5. [http-server](https://www.npmjs.com/package/http-server)
@@ -179,7 +180,6 @@ Ipsum Lorem....
 
 Setting up ```babel-preset-env```
 https://babeljs.io/docs/en/env
-
 
 ## Using Linnia
 Ipsum Lorem....
