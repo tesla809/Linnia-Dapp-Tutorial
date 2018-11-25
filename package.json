@@ -26,8 +26,8 @@
   },
   "homepage": "https://github.com/tesla809/Linnia-Dapp-Tutorial#readme",
   "devDependencies": {
+    "@babel/core": "^7.1.6",
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
     "babel-loader": "^8.0.4",
     "babel-preset-env": "^1.7.0",
     "http-server": "^0.11.1",
