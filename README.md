@@ -212,16 +212,16 @@ Linnia-Real-Estate-dApp
 + .gitignore
 ```
 
-The ```index.js``` will be in the ```/js``` folder. ```Index.html``` will be in the root.
+The ```index.js``` will be in the ```/js``` folder. The ```styles.css``` will be in the ```/css``` folder.  ```Index.html``` will be in the root.
 
 ```
 Linnia-Real-Estate-dApp
-|- /src
-    |- /css
-+     |- styles.css
-    |- /js
-+     |- index.js
-|- .gitignore
+/src
+  |- /css
++   |- styles.css
+  |- /js
++    |- index.js
+.gitignore
 + index.html
 ```
 
@@ -387,6 +387,36 @@ npm install babel-core --save-dev
 And replace the package with the name of each package on the list.
 
 **Note**: The --save-dev flag places the package in our dev-dependencies section of our package.json file. A quick summary of the difference between --save-dev and --save can be found [here](https://stackoverflow.com/questions/22891211/what-is-the-difference-between-save-and-save-dev).
+
+Now, let's create a ```.babelrc``` file. In the root aka main directory, try running
+
+```
+touch .babelrc
+```
+
+Your directory should look like this:
+
+```
+Linnia-Real-Estate-dApp
+/build
+/src
+  |- styles.css
+  |- index.js
+  index.html
+package.json
+.babelrc
+```
+
+Inside the ```.babelrc``` add the following configuration.
+
+```
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
+}
+```
+
+
+ADD TOOL TO CACHE BUST.
 
 ### Step 5. Configuring Developer Dependencies
 Now we must configure out developer dependencies.
