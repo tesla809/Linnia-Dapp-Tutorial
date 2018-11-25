@@ -404,7 +404,7 @@ Linnia-Real-Estate-dApp
   |- index.js
   index.html
 package.json
-.babelrc
++ .babelrc
 ```
 
 Inside the ```.babelrc``` add the following configuration.
@@ -414,7 +414,6 @@ Inside the ```.babelrc``` add the following configuration.
   "presets": ["@babel/preset-env", "@babel/preset-react"]
 }
 ```
-
 
 ADD TOOL TO CACHE BUST.
 
