@@ -242,6 +242,70 @@ Inside ```index.html``` add the following boilerplate code:
 </html>
 ```
 
+Next, create a file called ```permissions.html``` file outside the source folder.  
+
+```
+Linnia-Real-Estate-dApp
+/build
+/src
+  |- styles.css
+  |- index.js
+  index.html
++ permissions.html
+```
+
+Add the following code:
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Linnia Real Estate Dapp</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="./src/bundle.js"></script>
+  </head>
+  <body>
+    <h1>Linnia Real Estate Dapp</h1>
+    <div>
+      <div className="jumbotron text-center">
+          <h1>User Input</h1>
+          <p>View/Add Permission</p>
+      </div>
+      <table class="table">
+      <thead>
+          <tr>
+          <th scope="col">Give Permission To:</th>
+          <th scope="col">Name</th>
+          <th scope="col">Credit Score</th>
+          <th scope="col">W-2</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+          <th scope="row">Bank 1</th>
+          <td><input onChange={grantPermission} type="checkbox" aria-label="Checkbox for following text input" /></td>
+          <td><input onChange={grantPermission} type="checkbox" aria-label="Checkbox for following text input" /></td>
+          <td><input onChange={grantPermission} type="checkbox" aria-label="Checkbox for following text input" /></td>
+          </tr>
+          <tr>
+          <th scope="row">Renter 2</th>
+          <td><input onChange={grantPermission} type="checkbox" aria-label="Checkbox for following text input" /></td>
+          <td><input onChange={grantPermission} type="checkbox" aria-label="Checkbox for following text input" /></td>
+          <td><input onChange={grantPermission} type="checkbox" aria-label="Checkbox for following text input" /></td>
+          </tr>
+          <tr>
+          <th scope="row">Mortage Company3</th>
+          <td><input onChange={grantPermission} type="checkbox" aria-label="Checkbox for following text input" /></td>
+          <td><input onChange={grantPermission} type="checkbox" aria-label="Checkbox for following text input" /></td>
+          <td><input onChange={grantPermission} type="checkbox" aria-label="Checkbox for following text input" /></td>
+          </tr>
+      </tbody>
+      </table>
+      </div>
+  </body>
+</html>
+
+```
+
 Inside the ```index.js``` file add the following code:
 
 ```JavaScript
@@ -286,7 +350,7 @@ Linnia-Real-Estate-dApp
 /build
 /src
   |- styles.css
-  |- main.js
+  |- index.js
   index.html
 + package.json
 ```
@@ -366,8 +430,6 @@ To run Webpack in your terminal write:
 ```bash
 npm run webpack
 ```
-
-
 
 ## Using Linnia
 Ipsum Lorem....
