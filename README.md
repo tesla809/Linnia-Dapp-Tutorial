@@ -4,7 +4,7 @@ This is a tutorial which describes how to setup and use the Linnia Protocol via 
 Why do we need this setup?  
 [See our Beginners to Modern Web Development FAQs](#beginners-to-modern-web-development-faq)
 
-### Table of Contents
+## Table of Contents
 - [Linnia Protocol Summary](#linnia-protocol-summary)
 - [About the Decentralized App](#about-the-decentralized-app)
 - [Setup](#setup)
@@ -111,11 +111,53 @@ The ```index.js``` will be in the ```/js``` folder. ```Index.html``` will be in 
 
 ```
 Linnia-Real-Estate-Dapp
-|- /css
++ /src
 +  |- styles.css
-|- /js
 +  |- index.js
 + index.html
+```
+
+Inside ```index.html``` add the following boilerplate code:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Linnia Real Estate Dapp</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="./src/bundle.js"></script>
+  </head>
+  <body>
+    <h1>Linnia Real Estate Dapp</h1>
+    <button>Show</button>
+  </body>
+</html>
+```
+
+Inside the ```index.js``` file add the following code:
+
+```JavaScript
+console.log('Testing!');
+```
+
+Inside our ```styles.css``` file, add the following sample code:
+
+```css
+body {
+  background-color: #61bac6;
+}
+
+h1 {
+  color: white;
+}
+
+button {
+  background-color: #711e99;
+  height: 50px;
+  width: 100px;
+  font-size: 2em;
+  color: white;
+}
 ```
 
 **npm setup**  
@@ -133,11 +175,11 @@ You should see a new file called ```package.json```
 
 ```
 Linnia-Real-Estate-Dapp
-|- /css
+/build
+/src
   |- styles.css
-|- /js
   |- main.js
-index.html
+  index.html
 + package.json
 ```
 
@@ -163,23 +205,59 @@ Webpack's command line interface.
 Don't fret, we can install these with one single line of code by copying:
 
 ```bash
-npm install --save-dev babel-core babel-cli @babel/preset-env babel-loader http-server webpack webpack-cli
+npm install --save-dev babel-core babel-cli babel-preset-env babel-loader http-server webpack webpack-cli
 ```
 Or, if you'd like to install them one by one you repeat the following:
+
 ```bash
 npm install babel-core --save-dev
 ```
 And replace the package with the name of each package on the list.
 
-**Note**: The --save-dev flag places the package in our dev-dependencies section of our package.json file.
-
-A quick summary of the difference between --save-dev and --save can be found [here](#https://stackoverflow.com/questions/22891211/what-is-the-difference-between-save-and-save-dev).
+**Note**: The --save-dev flag places the package in our dev-dependencies section of our package.json file. A quick summary of the difference between --save-dev and --save can be found [here](https://stackoverflow.com/questions/22891211/what-is-the-difference-between-save-and-save-dev).
 
 ### Step 5. Configuring Developer Dependencies
-Ipsum Lorem....
+Now we must configure out developer dependencies.
 
-Setting up ```babel-preset-env```
-https://babeljs.io/docs/en/env
+In our ```package.json``` file we will add the following:
+
+```JavaScript
+"scripts": {
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "start": "http-server",
+    "webpack": "webpack"
+},
+```
+
+In our root directory ```Linnia-Real-Estate-Dapp``` we will create a new filed called ```webpack.config.js```. This will configure Webpack. Inside we will add babel-loader which allows us to use babel and set the version to ```env``` which tells babel which type of code to look out for when transpiling.
+
+Note we could also use babel to transpile JSX, a superset of JavaScript popular when writing React Apps.
+
+```JavaScript
+var path = require('path');
+var webpack = require('webpack');
+
+module.exports = {
+    entry: './js/main.js',
+    output: {
+        path: path.resolve(__dirname, 'build'),
+        filename: 'main.bundle.js'
+    },
+    module: {
+      presets: ["env"]
+    },
+    stats: {
+        colors: true
+    },
+    devtool: 'source-map'
+};
+```
+
+To run Webpack in your terminal write:
+
+```bash
+npm run webpack
+```
 
 ## Using Linnia
 Ipsum Lorem....
