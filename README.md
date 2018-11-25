@@ -365,19 +365,20 @@ Babel is a JavaScript transpiler that transforms ECMAScript 2015+ code into back
 babel-cli is the command line interface for Babel. It allows for scripts within npm and Webpack to call upon and use it.
 3. [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env)
 Let's Babel use the ES2015 syntax to convert to backwards compatible version of JavaSCript.
-4. [babel-loader](https://www.npmjs.com/package/babel-loader)
+4. [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react)
+5. [babel-loader](https://www.npmjs.com/package/babel-loader)
 In Babel 6, every transformer is a plugin that can be installed separately. A preset is a group of related plugins. Using a preset, you don’t have to install and update dozens of plugins individually.  
-5. [http-server](https://www.npmjs.com/package/http-server)
+6. [http-server](https://www.npmjs.com/package/http-server)
 We need a local web server because some parts of this tutorial will require the app to be loaded using the http protocol. Opening the file up in the browser normally won't work.
-6. [webpack](https://www.npmjs.com/package/webpack)
+7. [webpack](https://www.npmjs.com/package/webpack)
 Webpack is a module bundler whose main purpose is to bundle JavaScript files for usage in a browser. Yet it is also capable of transforming, transpiling, bundling, or packaging just about any resource or asset, like css, html files, images, etc.
-7. [webpack-cli](https://www.npmjs.com/package/webpack-cli)  
+8. [webpack-cli](https://www.npmjs.com/package/webpack-cli)  
 Webpack's command line interface.
 
 Don't fret, we can install these with one single line of code by copying:
 
 ```bash
-npm install --save-dev @babel/core babel-cli babel-preset-env babel-loader http-server webpack webpack-cli
+npm install --save-dev @babel/core @babel/preset-react babel-cli babel-preset-env babel-loader http-server webpack webpack-cli
 ```
 Or, if you'd like to install them one by one you repeat the following:
 
