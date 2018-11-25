@@ -359,7 +359,7 @@ Linnia-Real-Estate-dApp
 We will focus on setting up the tools which will allow us to write in modern ES6. Using ES6 will let us take advantage of some new nifty features that will make our lives easier.
 
 We will need:
-1. [babel-core](https://www.npmjs.com/package/babel-core)
+1. [@babel/core](https://www.npmjs.com/package/@babel/core)
 Babel is a JavaScript transpiler that transforms ECMAScript 2015+ code into backwards compatible version of JavaScript for current and older browser.
 2. [babel-cli](https://www.npmjs.com/package/babel-cli)
 babel-cli is the command line interface for Babel. It allows for scripts within npm and Webpack to call upon and use it.
@@ -377,12 +377,12 @@ Webpack's command line interface.
 Don't fret, we can install these with one single line of code by copying:
 
 ```bash
-npm install --save-dev babel-core babel-cli babel-preset-env babel-loader http-server webpack webpack-cli
+npm install --save-dev @babel/core babel-cli babel-preset-env babel-loader http-server webpack webpack-cli
 ```
 Or, if you'd like to install them one by one you repeat the following:
 
 ```bash
-npm install babel-core --save-dev
+npm install @babel/core --save-dev
 ```
 And replace the package with the name of each package on the list.
 
