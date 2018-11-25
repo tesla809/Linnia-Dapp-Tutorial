@@ -366,6 +366,7 @@ babel-cli is the command line interface for Babel. It allows for scripts within 
 3. [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env)
 Let's Babel use the ES2015 syntax to convert to backwards compatible version of JavaSCript.
 4. [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react)
+For some reason we need to install this package as well, or we will have an error from webpack. It will come in handy later if we want to refactor our app to use React.
 5. [babel-loader](https://www.npmjs.com/package/babel-loader)
 In Babel 6, every transformer is a plugin that can be installed separately. A preset is a group of related plugins. Using a preset, you don’t have to install and update dozens of plugins individually.  
 6. [http-server](https://www.npmjs.com/package/http-server)
