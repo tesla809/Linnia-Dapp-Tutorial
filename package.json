@@ -6,7 +6,7 @@
   "scripts": {
     "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
     "start": "http-server",
-    "webpack": "webpack"
+    "webpack": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -27,9 +27,9 @@
   "homepage": "https://github.com/tesla809/Linnia-Dapp-Tutorial#readme",
   "devDependencies": {
     "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.4",
-    "babel-preset-env": "^1.7.0",
     "http-server": "^0.11.1",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2"
