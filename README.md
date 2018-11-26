@@ -1,29 +1,29 @@
-# Linnia Decentralized Application Tutorial
-This is a tutorial which describes how to setup and use the Linnia Protocol via the LinniaJS library. We will create a sample decentralized application to demonstrate the Linnia Protocol's utility in an applied manner.
+Stow# Stow Decentralized Application Tutorial
+This is a tutorial which describes how to setup and use the Stow Protocol via the StowJS library. We will create a sample decentralized application to demonstrate the Stow Protocol's utility in an applied manner.
 
 Why do we need this setup?  
 [See our Beginners to Modern Web Development FAQs](#beginners-to-modern-web-development-faq)
 
 ## Table of Contents
-- [Linnia Protocol Summary](#linnia-protocol-summary)
+- [Stow Protocol Summary](#Stow-protocol-summary)
 - [About the Decentralized App](#about-the-decentralized-app)
 - [Setup](#setup)
   - [Installing NodeJS](#step-1-install-node)
   - [Create File Structure](#step-2-create-folder-structure)
   - [Create Files](#step-3-create-files)
   - [Installing Developer Dependencies](#step-4-installing-developer-dependencies)
-- [Using Linnia](#using-linnia)
-  - [Upload Records With Linnia](#upload-records-with-linnia)
+- [Using Stow](#using-Stow)
+  - [Upload Records With Stow](#upload-records-with-Stow)
   - [View and Remove Permissions](#view-and-remove-permissions)
   - [Accepting or Declining](#accepting-or-declining)
 
-## Linnia Protocol Summary
-The Linnia Protocol allows users to own and control their data without the need for centralized third parties. Learn what Linnia is all about on our [Linnia Resources](https://github.com/ConsenSys/linnia-resources) page.
+## Stow Protocol Summary
+The Stow Protocol allows users to own and control their data without the need for centralized third parties. Learn what Stow is all about on our [Stow Resources](https://github.com/ConsenSys/Stow-resources) page.
 
-LinniaJS is the JavaScript library that allows developers to use the Linnia Protocol. Check out the LinniaJS API on [Github](https://github.com/ConsenSys/linnia-js) and [npm](https://www.npmjs.com/package/@linniaprotocol/linnia-js).
+StowJS is the JavaScript library that allows developers to use the Stow Protocol. Check out the StowJS API on [Github](https://github.com/ConsenSys/Stow-js) and [npm](https://www.npmjs.com/package/@Stowprotocol/Stow-js).
 
 ## About the Decentralized App
-This tutorial dApp will be a based on the winning dApp during the first Linnia Hackathon by Isabel Lee, Mark G. Romano, Rene Medalla, and Gabriel Tan back in August 2018. Their original hackathon project can be found [here](https://github.com/ijl0322/Linnia-Hackathon-Final).
+This tutorial dApp will be a based on the winning dApp during the first Stow Hackathon by Isabel Lee, Mark G. Romano, Rene Medalla, and Gabriel Tan back in August 2018. Their original hackathon project can be found [here](https://github.com/ijl0322/Stow-Hackathon-Final).
 
 The dApp was called "Real Estate dApp". It was focused on the solving the problem of sharing data with multiple parties during a real estate transaction such as buying or renting a property.
 
@@ -37,7 +37,7 @@ If you have any questions regarding this tutorial, please refer to the [tutorial
 **Goal**:
 In this section, we will describe how setup our project. We will focus on setting up the tools before adding any code.
 
-**Note:** If you are familiar with a standard setup, you can skip to the future section, ["Uploading Records with Linnia"](#upload-records-with-linnia).
+**Note:** If you are familiar with a standard setup, you can skip to the future section, ["Uploading Records with Stow"](#upload-records-with-Stow).
 
 **Note:** A small preface: if you do not have Git or Bash installed on your machine, please do so. For Mac or Linux users, bash is installed by default. However, Git is not.
 
@@ -78,7 +78,7 @@ Your terminal should return something like:
 6.4.1
 ```
 
-Don't worry if it is not the same version. LinniaJS will work with any version of Node in Long Term release of 10 and up. If NodeJS is properly installed you should not have issues with setting up npm.
+Don't worry if it is not the same version. StowJS will work with any version of Node in Long Term release of 10 and up. If NodeJS is properly installed you should not have issues with setting up npm.
 
 ### Step 2. Create Folder Structure
 Next you will create the folder structure and files for this project.
@@ -90,23 +90,23 @@ Download the files directly, you can do so [here](https://github.com/).
 
 Or run the following command in your terminal:
 ```bash
-git clone https://github.com/tesla809/Linnia-dApp-Tutorial.git
+git clone https://github.com/tesla809/Stow-dApp-Tutorial.git
 ```
 
 **Regular Setup:**
-Find a location where you would like to place your project folder and create a new folder aka directory called 'Linnia-Real-Estate-dApp'.
+Find a location where you would like to place your project folder and create a new folder aka directory called 'Stow-Real-Estate-dApp'.
 
 For those that use bash on your terminal, ```cd``` (change directory) to the directory of your choice and ```mkdir``` (make directory).
 
 ```bash
 cd DIRECTORY_OF_CHOICE
-mkdir Linnia-Real-Estate-dApp
+mkdir Stow-Real-Estate-dApp
 ```
 
-Inside ```Linnia-Real-Estate-dApp``` create two other directories: ```/css```  and ```/js```:
+Inside ```Stow-Real-Estate-dApp``` create two other directories: ```/css```  and ```/js```:
 
 ```
-Linnia-Real-Estate-dApp
+Stow-Real-Estate-dApp
 + |- /src
 +   |- /css
 +   |- /js
@@ -213,7 +213,7 @@ typings/
 The file structure will look like this, with ```.gitignore``` outside of the /src.  
 
 ```
-Linnia-Real-Estate-dApp
+Stow-Real-Estate-dApp
 + /src
 +   |- /css
 +   |- /js
@@ -223,7 +223,7 @@ Linnia-Real-Estate-dApp
 The ```index.js``` will be in the ```/js``` folder. The ```styles.css``` will be in the ```/css``` folder.  ```Index.html``` will be in the root.
 
 ```
-Linnia-Real-Estate-dApp
+Stow-Real-Estate-dApp
 /src
   |- /css
 +   |- styles.css
@@ -239,12 +239,12 @@ Inside ```index.html``` add the following boilerplate code:
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Linnia Real Estate dApp</title>
+    <title>Stow Real Estate dApp</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="./src/bundle.js"></script>
   </head>
   <body>
-    <h1>Linnia Real Estate dApp</h1>
+    <h1>Stow Real Estate dApp</h1>
     <button>Show</button>
   </body>
 </html>
@@ -253,7 +253,7 @@ Inside ```index.html``` add the following boilerplate code:
 Next, create a file called ```permissions.html``` file outside the source folder.  
 
 ```
-Linnia-Real-Estate-dApp
+Stow-Real-Estate-dApp
 /build
 /src
   |- styles.css
@@ -267,12 +267,12 @@ Add the following code:
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Linnia Real Estate Dapp</title>
+    <title>Stow Real Estate Dapp</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="./src/bundle.js"></script>
   </head>
   <body>
-    <h1>Linnia Real Estate Dapp</h1>
+    <h1>Stow Real Estate Dapp</h1>
     <div>
       <div className="jumbotron text-center">
           <h1>User Input</h1>
@@ -320,7 +320,7 @@ Then add the following code:
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Linnia Real Estate Dapp</title>
+    <title>Stow Real Estate Dapp</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="./dist/main.js"></script>
   </head>
@@ -330,7 +330,7 @@ Then add the following code:
       <a href='/permissions.html'><span>View/Add Permissions</span></a>
       <a href='/'><span>Third Party</span></a>
     </div>
-    <h1>Linnia Real Estate Dapp</h1>
+    <h1>Stow Real Estate Dapp</h1>
       <div>
       <div className="jumbotron text-center">
           <h1>Third Party Approval Status</h1>
@@ -426,7 +426,7 @@ body {
 ```
 
 **npm setup**  
-To set up npm, we run the following command inside out root folder ```Linnia-Real-Estate-dApp```:
+To set up npm, we run the following command inside out root folder ```Stow-Real-Estate-dApp```:
 
 ```bash
 npm init
@@ -439,7 +439,7 @@ The terminal will prompt you to fill out some information. Fill out the informat
 You should see a new file called ```package.json```
 
 ```
-Linnia-Real-Estate-dApp
+Stow-Real-Estate-dApp
 /build
 /src
   |- styles.css
@@ -468,8 +468,14 @@ This will help us load the style and adds hash at the end of the style.css file 
 We need a local web server because some parts of this tutorial will require the app to be loaded using the http protocol. Opening the file up in the browser normally won't work.
 8. [webpack](https://www.npmjs.com/package/webpack)
 Webpack is a module bundler whose main purpose is to bundle JavaScript files for usage in a browser. Yet it is also capable of transforming, transpiling, bundling, or packaging just about any resource or asset, like css, html files, images, etc.
-9. [webpack-cli](https://www.npmjs.com/package/webpack-cli)  
+9. [webpack-cli](https://www.npmjs.com/package/webpack-cli)   
 Webpack's command line interface.
+10. [ipfs-api](https://www.npmjs.com/package/ipfs-api)  
+A client library for the IPFS HTTP API, implemented in JavaScript. We need this for our de-centralized storage.
+11. [web3](https://www.npmjs.com/package/web3)  
+web3.js is a collection of libraries which allow you to interact with a local or remote ethereum node, using a HTTP or IPC connection.
+12. [@stowprotocol/stow-js](https://www.npmjs.com/package/@stowprotocol/stow-js)
+This is the npm package for the Stow protocol!
 
 Don't fret, we can install these with one single line of code by copying:
 
@@ -494,7 +500,7 @@ touch .babelrc
 Your directory should look like this:
 
 ```
-Linnia-Real-Estate-dApp
+Stow-Real-Estate-dApp
 /build
 /src
   |- styles.css
@@ -527,7 +533,7 @@ In our ```package.json``` file we will add the following:
 },
 ```
 
-In our root directory ```Linnia-Real-Estate-dApp``` we will create a new filed called ```webpack.config.js```. This will configure Webpack. Inside we will add babel-loader which allows us to use babel and set the version to ```env``` which tells babel which type of code to look out for when transpiling.
+In our root directory ```Stow-Real-Estate-dApp``` we will create a new filed called ```webpack.config.js```. This will configure Webpack. Inside we will add babel-loader which allows us to use babel and set the version to ```env``` which tells babel which type of code to look out for when transpiling.
 
 Note we could also use babel to transpile JSX, a superset of JavaScript popular when writing React Apps.
 
@@ -573,10 +579,10 @@ To run Webpack in your terminal write:
 npm run webpack
 ```
 
-## Using Linnia
+## Using Stow
 Ipsum Lorem....
 
-### Upload Records With Linnia
+### Upload Records With Stow
 Ipsum Lorem....
 
 ### Accepting or Declining
@@ -584,19 +590,19 @@ Ipsum Lorem....
 
 ## Beginners to Modern Web Development FAQ:
 **Q: You said this was accessible?**
-A: While we tried to make this accessible, this is the current state of web development today. Trying to make it simpler without the build tools set up would have ironically made learning about Linnia harder. We get thru the setup quickly.
+A: While we tried to make this accessible, this is the current state of web development today. Trying to make it simpler without the build tools set up would have ironically made learning about Stow harder. We get thru the setup quickly.
 
 **Q: Before I get started, why should I invest this time into learning this?**
 A: The setup will be brief. Although there may be some new tools you have never seen, they will quickly seem familiar.
 
-**Q: I just want to use LinniaJS. Why do I have all these dependencies?**
+**Q: I just want to use StowJS. Why do I have all these dependencies?**
 A: These dependencies are the de-facto standard in modern web development. The setup time is compensated by the ease of which they bring later during the workflow.  
 
 ES6 introduced a bunch of useful things that makes developing web applications easier. However, due to the lack of coordination between browsers, developers had two choices.
 
 Developers could wait for all browsers to adopt all the features, while make life difficult during the time they maintain the code. Or they can use build tools and make semi life difficult only when setting up the tools.
 
-No worries though. We will gloss over going too in-depth with the tools, only set things up and just focus on using Linnia specifically.
+No worries though. We will gloss over going too in-depth with the tools, only set things up and just focus on using Stow specifically.
 
 **Q: What is NodeJS?**
 NodeJS is a JavaScript runtime environment. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
@@ -608,7 +614,7 @@ Event-driven means that events initialize the code.
 **Q: Why use NodeJS?**  
 It faster than most back environments and most developers know JavaScript already, so the learning curve is less steep. NodeJS also has a large developer community that publishes code on NPM, a package manager for Node. Packages of stand alone snippets of code that solve specific problems and can be downloaded by anybody.
 
-These benefits led to the Linnia team deciding to release a JavaScript library first. However, that doesn't stop us from eventually releasing libraries in Python, Ruby or other languages.
+These benefits led to the Stow team deciding to release a JavaScript library first. However, that doesn't stop us from eventually releasing libraries in Python, Ruby or other languages.
 
 **Q: What is Webpack?**  
 A: WebPack bundles, preprocess and tweaks files. No need to worry, we  won’t get deep under the hood. Our set up will consist of some simple boiler plate code and a very quick description of what it does.
