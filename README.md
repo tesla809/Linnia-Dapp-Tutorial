@@ -423,18 +423,6 @@ Inside our ```styles.css``` file, add the following sample code:
 body {
   background-color: #61bac6;
 }
-
-h1 {
-  color: white;
-}
-
-button {
-  background-color: #711e99;
-  height: 50px;
-  width: 100px;
-  font-size: 2em;
-  color: white;
-}
 ```
 
 **npm setup**  
