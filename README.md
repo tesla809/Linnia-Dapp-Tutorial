@@ -464,11 +464,11 @@ For some reason we need to install this package as well, or we will have an erro
 In Babel 6, every transformer is a plugin that can be installed separately. A preset is a group of related plugins. Using a preset, you don’t have to install and update dozens of plugins individually.  
 6. [style-loader](https://www.npmjs.com/package/style-loader)  
 This will help us load the style and adds hash at the end of the style.css file that acts as a cache buster. Having something in cache means that the browser stores an old copy of the file and  doesn't download the new updates. So, we need a cache buster to make sure that we always have the new updates rendering in the browser.  
-6. [http-server](https://www.npmjs.com/package/http-server)
+7. [http-server](https://www.npmjs.com/package/http-server)
 We need a local web server because some parts of this tutorial will require the app to be loaded using the http protocol. Opening the file up in the browser normally won't work.
-7. [webpack](https://www.npmjs.com/package/webpack)
+8. [webpack](https://www.npmjs.com/package/webpack)
 Webpack is a module bundler whose main purpose is to bundle JavaScript files for usage in a browser. Yet it is also capable of transforming, transpiling, bundling, or packaging just about any resource or asset, like css, html files, images, etc.
-8. [webpack-cli](https://www.npmjs.com/package/webpack-cli)  
+9. [webpack-cli](https://www.npmjs.com/package/webpack-cli)  
 Webpack's command line interface.
 
 Don't fret, we can install these with one single line of code by copying:
