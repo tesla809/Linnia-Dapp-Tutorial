@@ -39,6 +39,14 @@ In this section, we will describe how setup our project. We will focus on settin
 
 **Note:** If you are familiar with a standard setup, you can skip to the future section, ["Uploading Records with Linnia"](#upload-records-with-linnia).
 
+**Note:** A small preface: if you do not have Git or Bash installed on your machine, please do so. For Mac or Linux users, bash is installed by default. However, Git is not.
+
+If you can go through this tutorial with Microsoft's Powershell, awesome! However, for those with Window's machines without knowledge of Powershell, install Bash.
+
+To install Git go [here](https://git-scm.com/downloads) and pick your operating system.  
+
+If you have Windows 10 and wish to install Bash go [here](https://itsfoss.com/install-bash-on-windows/)
+
 ### Step 1. Install Node
 First, we have to make sure that you have NodeJS installed on your computer. NodeJS is a  JavaScript runtime environment that allows you to use JavaScript on the backend like any other programming language. It frees JavaScript from being just a client side language and allows us to use it on the back end.
 
@@ -390,7 +398,7 @@ And replace the package with the name of each package on the list.
 
 **Note**: The --save-dev flag places the package in our dev-dependencies section of our package.json file. A quick summary of the difference between --save-dev and --save can be found [here](https://stackoverflow.com/questions/22891211/what-is-the-difference-between-save-and-save-dev).
 
-Now, let's create a ```.babelrc``` file. In the root aka main directory, try running
+Now, let's create a ```.babelrc``` file. In the root aka main directory, try the following script in your terminal:
 
 ```
 touch .babelrc
