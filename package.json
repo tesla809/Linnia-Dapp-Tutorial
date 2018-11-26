@@ -32,8 +32,13 @@
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.4",
     "http-server": "^0.11.1",
+    "style-loader": "^0.23.1",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@stowprotocol/stow-js": "^0.3.4",
+    "ipfs-api": "^26.1.2",
+    "web3": "^1.0.0-beta.36"
+  }
 }

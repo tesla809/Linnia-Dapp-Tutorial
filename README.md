@@ -487,9 +487,15 @@ Or, if you'd like to install them one by one you repeat the following:
 ```bash
 npm install @babel/core --save-dev
 ```
-And replace the package with the name of each package on the list.
+And replace the package with the name of each package on the list. But thats the long way. Save yourself the time.
 
 **Note**: The --save-dev flag places the package in our dev-dependencies section of our package.json file. A quick summary of the difference between --save-dev and --save can be found [here](https://stackoverflow.com/questions/22891211/what-is-the-difference-between-save-and-save-dev).
+
+To install the regular dependencies, run the following command:
+
+```
+npm install ipfs-api web3 @stowprotocol/stow-js
+```
 
 Now, let's create a ```.babelrc``` file. In the root aka main directory, try the following script in your terminal:
 
@@ -582,10 +588,10 @@ npm run webpack
 ## Using Stow
 Ipsum Lorem....
 
-### Upload Records With Stow
+### Upload Records
 Ipsum Lorem....
 
-### Accepting or Declining
+### Permissions
 Ipsum Lorem....
 
 ## Beginners to Modern Web Development FAQ:
