@@ -210,7 +210,7 @@ typings/
 .dynamodb/
 ```
 
-The file structure will look like this, with ```.gitignore``` outside of the /src.
+The file structure will look like this, with ```.gitignore``` outside of the /src.  
 
 ```
 Linnia-Real-Estate-dApp
@@ -311,8 +311,105 @@ Add the following code:
       </div>
   </body>
 </html>
-
 ```
+
+After that, create a file called ```thirdparty.html``` file outside the source folder.
+
+Then add the following code:
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Linnia Real Estate Dapp</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="./dist/main.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <a href='/index.html'><span>View/Add Records</span></a>
+      <a href='/permissions.html'><span>View/Add Permissions</span></a>
+      <a href='/'><span>Third Party</span></a>
+    </div>
+    <h1>Linnia Real Estate Dapp</h1>
+      <div>
+      <div className="jumbotron text-center">
+          <h1>Third Party Approval Status</h1>
+          <h2>Approve or Deny Records</h2>
+      </div>
+
+    <!-- programmatically add build container -->
+    <div className="container">
+      <form>
+        <div className="form-group row">
+          <label className="col-sm-2 col-form-label">Hash Code: </label>
+          <div className="col-sm-10">
+            <p className="form-control-static">039839f9...</p>
+          </div>
+        </div>
+        <div className="form-group row">
+          <label className="col-sm-2 col-form-label">Name: </label>
+          <div className="col-sm-10">
+            <p className="form-control-static">{this.state.name}</p>
+          </div>
+        </div>
+        <div className="form-group row">
+          <label className="col-sm-2 col-form-label">Credit Score: </label>
+          <div className="col-sm-10">
+            <p className="form-control-static">{this.state.creditScore}</p>
+          </div>
+        </div>
+        <div className="form-group row">
+          <label className="col-sm-2 col-form-label">View W-2: </label>
+          <div className="col-sm-10">
+            <button>VIEW W-2</button>
+          </div>
+        </div>
+        <button type="button" class="btn btn-success">Approve</button>
+        <button type="button" class="btn btn-danger">Reject</button>
+      </form>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+
+    <div className="container">
+      <form>
+        <div className="form-group row">
+          <label className="col-sm-2 col-form-label">Hash Code: </label>
+          <div className="col-sm-10">
+            <p className="form-control-static">039839f9...</p>
+          </div>
+        </div>
+        <div className="form-group row">
+          <label className="col-sm-2 col-form-label">Name: </label>
+          <div className="col-sm-10">
+            <p className="form-control-static">{this.state.name}</p>
+          </div>
+        </div>
+        <div className="form-group row">
+          <label className="col-sm-2 col-form-label">Credit Score: </label>
+          <div className="col-sm-10">
+            <p className="form-control-static">{this.state.creditScore}</p>
+          </div>
+        </div>
+        <div className="form-group row">
+          <label className="col-sm-2 col-form-label">View W-2: </label>
+          <div className="col-sm-10">
+            <button>VIEW W-2</button>
+          </div>
+        </div>
+        <button type="button" class="btn btn-success">Approve</button>
+        <button type="button" class="btn btn-danger">Reject</button>
+      </form>
+    </div>
+    </div>
+
+  </body>
+</html>
+```
+
+Now let's create the javascript and css files.
 
 Inside the ```index.js``` file add the following code:
 
